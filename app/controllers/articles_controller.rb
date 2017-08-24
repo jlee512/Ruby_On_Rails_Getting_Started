@@ -22,6 +22,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
+  # Can change '.find' parameters to extract particular results as required
   def index
     @articles = Article.all
   end
